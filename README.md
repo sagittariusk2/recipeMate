@@ -16,7 +16,7 @@ the RecipeMate is the best partner for you. It has recipe which are easy to make
 
 -Get likes on your creative dishes and learn,make,eat and share delicious food by staying at home.
 
--Get those chat and hotel food craving satisfied by making RecipeMate your partner.!
+-Get those Chaat and hotel food craving satisfied by making RecipeMate your partner.!
 
   
 ## Table of Contents:
