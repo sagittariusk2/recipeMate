@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.booleank2j.recipe_mate">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/slogo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Food_app">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".splashActivity" android:theme="@style/splashTheme" >
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".feedActivity" />
+        <activity android:name=".profileActivity" />
+        <activity android:name=".forgetPasswordActivity" />
+        <activity android:name=".FeedbackActivity" />
+        <activity android:name=".contactActivity" />
+        <activity android:name=".IngredientsPageActivity" />
+        <activity android:name=".post1Activity" />
+        <activity android:name=".post2Activity" />
+        <activity android:name=".post3Activity" />
+        <activity android:name=".RecipeSearchActivity" />
+        <activity android:name=".RecipeSearchList" />
+    </application>
+
+</manifest>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+tools:context=".SignUpActivity"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:background="@drawable/rec22">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="415dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rec"
+        android:layout_marginTop="150dp">
+
+        <EditText
+            android:id="@+id/namebox"
+            android:layout_width="363dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:hint="Name"
+            android:textColorHint="#FF601C"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/mailbox"
+            android:layout_width="363dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="-360dp"
+            android:layout_marginTop="120dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:textColorHint="#FF601C"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/passbox"
+            android:inputType="textPassword"
+            android:layout_width="363dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-365dp"
+            android:layout_marginTop="210dp"
+            android:textColor="@color/black"
+            android:hint="Password"
+            android:textColorHint="#FF601C"
+            android:textSize="18dp" />
+
+
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="343dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="-350dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            app:backgroundTint="#812508" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/arrow"
+        android:id="@+id/backicon"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+
+</RelativeLayout>

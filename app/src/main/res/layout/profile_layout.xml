@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img55">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="#812508"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:fontFamily="casual"
+            android:textSize="20sp"
+            android:id="@+id/logout"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/white"
+            android:layout_marginStart="330dp"
+            android:textStyle="bold" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cardView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/profile">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="353dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="300dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Victoria Robertson"
+            android:textSize="35sp"
+            android:id="@+id/nameTv"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/t11"
+            android:layout_marginTop="364dp"
+            android:layout_marginStart="70dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="366dp"
+            android:layout_marginLeft="130dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/likesTv"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/t22"
+            android:layout_marginTop="369dp"
+            android:layout_marginLeft="230dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="366dp"
+            android:layout_marginLeft="290dp"
+            android:text="0"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/dislikesTv"/>
+        <TextView
+            android:layout_width="353dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="450dp"
+            android:text="abc@gmail.com"
+            android:id="@+id/mailcontainer"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"/>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/update"
+            app:spinning_bar_width="4dp"
+            app:spinning_bar_color="#FFF"
+            android:text="update"
+            android:textColor="@color/white"
+            android:backgroundTint="#812508"
+            android:layout_gravity="center_horizontal"
+            app:spinning_bar_padding="6dp"
+            android:background="@drawable/button"
+            app:initialCornerAngle="27dp"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40sp"
+            android:layout_marginBottom="20sp"
+            android:layout_width="343dp"
+            android:layout_height="51dp" />
+
+
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navlayout"
+        android:background="#FFFFFF"
+       app:headerLayout="@layout/header"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

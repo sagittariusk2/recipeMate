@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/img55"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foodie Food"
+        android:textSize="30dp"
+        android:layout_marginLeft="40dp"
+        android:textStyle="bold"></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="Select the Ingredients"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp" />
+        <AutoCompleteTextView
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="-160dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#BC4C28"
+            android:id="@+id/IngredientsSearch"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="180dp"
+       android:layout_marginLeft="30dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="350dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#BC4C28">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/chipGroup"
+                android:visibility="gone"/>
+        </ScrollView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the Category"
+            android:textSize="16dp"
+            android:fontFamily="casual"
+            android:textStyle="bold"/>
+        <Spinner
+            android:layout_width="343dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button"
+            android:backgroundTint="#BC4C28"
+            android:id="@+id/categorySpinner2"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#812508"
+        android:text="Search"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:id="@+id/RecipeSearchbtn"
+        app:backgroundTint="#812508" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navlayout"
+        android:background="#FFFFFF"
+        app:headerLayout="@layout/header"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:menu="@menu/drawer_menu"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:background="@drawable/button"
+        android:orientation="vertical"
+        android:backgroundTint="#E8E8E8">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Step"
+                android:textColor="@color/black"
+                android:layout_margin="15sp"
+                android:id="@+id/stepCount"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_margin="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cross"
+                android:layout_marginLeft="300dp"
+                android:id="@+id/delete"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:padding="15sp"
+            android:id="@+id/recipe"
+            android:hint="Write your recipe"
+            android:textColorHint="#DDC8C1"
+            android:background="@drawable/button"
+            android:backgroundTint="#BC4C28"/>
+
+    </LinearLayout>
+
+</LinearLayout>

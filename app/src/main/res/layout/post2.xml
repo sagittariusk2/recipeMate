@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/img55"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/foodieFood"
+            android:text="Recipe Mate"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/3"
+            android:layout_margin="10sp"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5sp"
+            android:layout_below="@+id/foodieFood"
+            android:id="@+id/x"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add the ingredient"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"/>
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:id="@+id/AddIngredientButton"
+                android:src="@drawable/plus_2"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="-30dp"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/x"
+            android:layout_margin="10sp"
+            android:id="@+id/scrollView1"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/next2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/IngredientId"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+        </ScrollView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15sp"
+            android:padding="10dp"
+            android:background="#DCF1CF"
+            android:text="Next"
+            android:textSize="20dp"
+            android:id="@+id/next2"
+            android:textStyle="bold"
+            android:textColor="#FF601C"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

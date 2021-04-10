@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Recipe_Mate</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="gmail">
+         <u>autocratsboolean@gmail.com</u>.
+    </string>
+    <string name="foodie_food">Recipe Mate</string>
+</resources>

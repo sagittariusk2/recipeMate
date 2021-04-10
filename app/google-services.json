@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "95801421026",
+    "project_id": "recipe-mate-fc02b",
+    "storage_bucket": "recipe-mate-fc02b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95801421026:android:2e711d5804a0d4a24c02bb",
+        "android_client_info": {
+          "package_name": "com.booleank2j.recipe_mate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95801421026-sp1k1vug30rfh3o88g6sqec3kbna98co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtYbCv2OPxKtiSDD2cjKGRnmoXw_21Hc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95801421026-sp1k1vug30rfh3o88g6sqec3kbna98co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

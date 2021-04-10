@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="242dp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:scaleType="fitXY"
+        android:background="@drawable/button"
+        android:backgroundTint="#E8E8E8"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/button2"
+        android:layout_height="50sp"
+        android:backgroundTint="#BC4C28"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cardView"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:layout_margin="3sp"
+            android:src="@drawable/person"
+            app:cardCornerRadius="100dp" />
+
+        <TextView
+            android:layout_toEndOf="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name"
+            android:id="@+id/foodName"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="15sp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/vegView"
+            android:layout_toEndOf="@+id/foodName"
+            android:layout_width="15sp"
+            android:background="#4CAF50"
+            android:layout_height="15sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="15sp"
+            app:cardCornerRadius="100dp" />
+
+        <ImageView
+            android:layout_toStartOf="@+id/likeId"
+            android:id="@+id/likeIm"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/t1"
+            android:layout_marginTop="17sp"/>
+        <TextView
+            android:layout_toStartOf="@+id/dislikeIm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="15sp"
+            android:text="0"
+            android:id="@+id/likeId"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_toStartOf="@+id/dislikeId"
+            android:layout_width="16dp"
+            android:id="@+id/dislikeIm"
+            android:layout_height="16dp"
+            android:src="@drawable/t2"
+            android:layout_marginTop="17sp"/>
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:id="@+id/dislikeId"
+            android:layout_margin="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+    </RelativeLayout>
+</RelativeLayout>
