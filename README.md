@@ -7,7 +7,7 @@
 
 ## Introduction:
   -Have few ingredients but craving to eat something delicious made out of those ingredients?
-Don't worry, we have come up with a recipe partner for you!.
+Don't worry, Here's a recipe partner for you!.
 
 -In today's situation, even if you have less ingredients or want to make delicious food at home but do not prefer to order online food due to safety measures
 the RecipeMate is the best partner for you. It has recipe which are easy to make and satisfy your cravings!.
