@@ -19,6 +19,9 @@ the RecipeMate is the best partner for you. It has recipe which are easy to make
 -Get those Chaat and hotel food craving satisfied by making RecipeMate your partner.!
 
 [Video link](https://www.youtube.com/watch?v=Sp1W8KA9Wpg)
+Demo user credentials:
+Email Id- demo.sangam.123@gmail.com
+password- recipemate
 
   
 ## Table of Contents:
