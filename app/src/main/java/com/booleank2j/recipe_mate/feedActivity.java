@@ -174,6 +174,25 @@ public class feedActivity  extends AppCompatActivity {
                 shareIntent.setType("text/plain");
                 startActivity(Intent.createChooser(shareIntent, "choose one"));
             }
+            if(id==R.id.logout){
+                LogIn=false;
+                editor.clear();
+                editor.apply();
+                FirebaseAuth.getInstance().signOut();
+                ProgressDialog progressDialog = new ProgressDialog(feedActivity.this);
+                progressDialog.setTitle("Logging Out....");
+                progressDialog.setCancelable(false);
+                progressDialog.show();
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        progressDialog.dismiss();
+                        Intent in =new Intent(feedActivity.this,MainActivity.class);
+                        finish();
+                        startActivity(in);
+                    }
+                }, 2000);
 
 
 
