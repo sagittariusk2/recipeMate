@@ -117,30 +117,7 @@ public class profileActivity extends AppCompatActivity {
         emailTv.setText(email);
         sharedPreferences = getSharedPreferences("userDB",MODE_PRIVATE);
         editor = sharedPreferences.edit();
-        logoutTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                LogIn=false;
-                editor.clear();
-                editor.apply();
-                ProgressDialog progressDialog = new ProgressDialog(profileActivity.this);
-                progressDialog.setTitle("Logging Out....");
-                progressDialog.setCancelable(false);
-                progressDialog.show();
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        progressDialog.dismiss();
-                        Intent in =new Intent(profileActivity.this,MainActivity.class);
-                        finish();
-                        startActivity(in);
-                    }
-                }, 2000);
-
-            }
-        });
+        
 
         final Bitmap[] bitmap = new Bitmap[1];
 
