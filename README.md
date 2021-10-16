@@ -33,14 +33,6 @@ password- recipemate
   4) Java
   5) JSON
   6) XML
-  
-
-## Contributors:
-
-Team Name: Boolean K2J
-
-* [Janhavi Satpute](https://github.com/janhavi018)
-* [Ritesh Ranjan](https://github.com/sagittariusk2)
 
 
 
